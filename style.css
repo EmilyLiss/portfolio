@@ -61,3 +61,8 @@ a:hover {
   width: 1090px;
   border: 2px solid white;
 }
+
+.img {
+  margin-top: -500px;
+  margin-left: 200px;
+}
