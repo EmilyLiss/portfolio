@@ -61,8 +61,16 @@ a:hover {
   width: 1090px;
   border: 2px solid white;
 }
+span {
+  color: #FFC0CB;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+        transition: all 1s ease;
+}
 
-.img {
-  margin-top: -500px;
-  margin-left: 200px;
+span:hover {
+  color: #FF1493;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            transition: all 1s ease;
 }
