@@ -11,7 +11,7 @@ h2 {
    margin-top: -160px;
 }
 h3 {
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 20px;
   font-size: 35px;
 }
@@ -29,6 +29,7 @@ body {
    border-bottom-left-radius: 15px;
    border-bottom-right-radius: 15px;
 }
+
 .img-circle {
    margin-top: 20px;
    margin-right: 100px;
@@ -57,18 +58,6 @@ a:hover {
                transition: all 1s ease;
 }
 
-#about {
-  color: white;
-  margin-left: 570px;
-  margin-top: -30px;
-  background-color: #FF1493;
-  width: 1090px;
-  border: 2px solid white;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
 span {
   color: #FFC0CB;
   -webkit-transition: all 1s ease;
@@ -81,4 +70,16 @@ span:hover {
             -webkit-transition: all 1s ease;
             -moz-transition: all 1s ease;
             transition: all 1s ease;
+}
+#about {
+  color: white;
+  margin-left: 570px;
+  margin-top: -30px;
+  background-color: #FF1493;
+  width: 1090px;
+  border: 2px solid white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
