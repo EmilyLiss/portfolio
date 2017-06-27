@@ -24,6 +24,10 @@ body {
    height: 200px;
    width: 1500px;
    margin-left: 160px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
 }
 .img-circle {
    margin-top: 20px;
@@ -60,6 +64,10 @@ a:hover {
   background-color: #FF1493;
   width: 1090px;
   border: 2px solid white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 span {
   color: #FFC0CB;
