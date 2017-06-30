@@ -51,7 +51,13 @@ a {
         transition: all 1s ease;
    font-size: 40;
 }
-a:hover {
+tr {
+  background-color: #FFC0CB;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+tr:hover {
    background-color: #FF1493;
                -webkit-transition: all 1s ease;
                -moz-transition: all 1s ease;
