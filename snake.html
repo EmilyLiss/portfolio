@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake</title>
+  <link rel = "stylesheet" type = "text/css" href = 'file:///C:/Users/GWC-ATL-05/Desktop/style.css'/>
+  <style>
+  #game {
+    height: 550px;
+    margin-left: 570px;
+    margin-top: -30px;
+    background-color: #FF1493;
+    width: 1090px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  #box {
+    height: 450px;
+    width: 450px;
+    border: 5px solid white;
+    font: 16px/26px Georgia, Garamond, Serif;
+    overflow: auto;
+    float: right;
+    margin-top: -460px;
+    background-color: #FFC0CB;
+    color: white;
+    margin-right: 50px;
+    font-size: 30px;
+  }
+  .img {
+    margin-top: -400px;
+    margin-left: 180px;
+  }
+  #top {
+    font-weight: bold;
+  }
+  </style>
+</head>
+    <br/>
+    <div id = "header">
+    <img class="img-circle" src = "https://scontent.cdninstagram.com/t51.2885-19/s150x150/15048015_196264464160183_534222471956529152_a.jpg"/>
+    <h1>Emily Liss</h1>
+    </div>
+    <br/>
+    <table border style="border: solid; color: white;">
+      <tr>
+        <td><a href = "file:///C:/Users/GWC-ATL-05/Desktop/AboutMe.html">About Me</a></td>
+      </tr><tr>
+        <td><a href = "file:///C:/Users/GWC-ATL-05/Desktop/education.html">Education and Past</a></td>
+      </tr><tr>
+        <td><a href = "file:///C:/Users/GWC-ATL-05/Desktop/pastprojects.html">Awards/Achievements</a></td>
+      </tr>
+    </table>
+    <h2>Snake Game:</h2>
+    <div id = "game">
+      <br/><br/><br/>
+    <canvas id="canvas" width="450" height="450" style="float:right;">
+    </canvas>
+    <div id = "box">
+      <span id = "top">Code:</span><br/><br/>
+      $(document).ready(function() {<br/>
+      	var canvas = $("#canvas")[0];<br/>
+      	var ctx = canvas.getContext("2d");<br/>
+      	var w = $("#canvas").width();<br/>
+      	var h = $("#canvas").height();<br/>
+      	var cw = 10;<br/>
+      	var d;<br/>
+      	var food;<br/>
+      	var score;<br/>
+      	var snake_array;<br/>
+      	function init() {<br/>
+      		d = "right";<br/>
+      		create_snake();<br/>
+      		create_food();<br/>
+      		score = 0;<br/>
+      		if(typeof game_loop != "undefined") clearInterval(game_loop);<br/>
+      		game_loop = setInterval(paint, 60);<br/>
+      	}<br/>
+      	init();<br/>
+      	function create_snake() {<br/>
+      		var length = 5;<br/>
+      		snake_array = [];<br/>
+      		for(var i = length-1; i>=0; i--) {<br/>
+      			snake_array.push({x: i, y:0});<br/>
+      		}<br/>
+      	}<br/>
+      	function create_food() {<br/>
+      		food = {<br/>
+      			x: Math.round(Math.random()*(w-cw)/cw),<br/>
+      			y: Math.round(Math.random()*(h-cw)/cw),<br/>
+      		};<br/>
+      	}<br/>
+      	function paint() {<br/>
+      		ctx.fillStyle = "pink";<br/>
+      		ctx.fillRect(0, 0, w, h);<br/>
+      		ctx.strokeStyle = "black";<br/>
+      		ctx.strokeRect(0, 0, w, h);<br/>
+      		var nx = snake_array[0].x;<br/>
+      		var ny = snake_array[0].y;<br/>
+      		if(d == "right") nx++;<br/>
+      		else if(d == "left") nx--;<br/>
+      		else if(d == "up") ny--;<br/>
+      		else if(d == "down") ny++;<br/>
+      		if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array)) {<br/>
+      			init();<br/>
+      			return;<br/>
+      		}<br/>
+      		if(nx == food.x && ny == food.y) {<br/>
+      			var tail = {x: nx, y: ny};<br/>
+      			score++;<br/>
+      			create_food();<br/>
+      		}<br/>
+      		else {<br/>
+      			var tail = snake_array.pop();<br/>
+      			tail.x = nx; tail.y = ny;<br/>
+      		}<br/>
+      		snake_array.unshift(tail);<br/>
+      		for(var i = 0; i < snake_array.length; i++) {<br/>
+      			var c = snake_array[i];<br/>
+      			paint_cell(c.x, c.y);<br/>
+      		}<br/>
+      		paint_cell(food.x, food.y);<br/>
+      		var score_text = "Score: " + score;<br/>
+      		ctx.fillText(score_text, 5, h-5);<br/>
+      	}<br/>
+      	function paint_cell(x, y) {<br/>
+      		ctx.fillStyle = "white";<br/>
+      		ctx.fillRect(x*cw, y*cw, cw, cw);<br/>
+      		ctx.strokeStyle = "black";<br/>
+      		ctx.strokeRect(x*cw, y*cw, cw, cw);<br/>
+      	}<br/>
+
+      	function check_collision(x, y, array) {<br/>
+      		for(var i = 0; i < array.length; i++) {<br/>
+      			if(array[i].x == x && array[i].y == y)<br/>
+      			 return true;<br/>
+      		}<br/>
+      		return false;<br/>
+      	}<br/>
+      	$(document).keydown(function(e) {<br/>
+      		var key = e.which;<br/>
+      		if(key == "37" && d != "right") d = "left";<br/>
+      		else if(key == "38" && d != "down") d = "up";<br/>
+      		else if(key == "39" && d != "left") d = "right";<br/>
+      		else if(key == "40" && d != "up") d = "down";<br/>
+      	})<br/>
+      })
+
+    </div>
+  </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+     <script src = "snake.js" type="text/javascript"></script>
+     <div class = "img">
+       <img src = "https://lh3.googleusercontent.com/SyqVfWhKi6uJC23uGZceX1wzQVkyjec8t3xk7k-sUjRlDP7S9DLWuoW_GBRmsFoYv4Q=w300"/>
+     </div>
+  </body>
+</html>
