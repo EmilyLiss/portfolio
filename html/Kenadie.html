@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {margin: 0;}
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  center .circle {
+      width: 570px;
+      height: 570px;
+      border-radius: 50%;
+      margin-top: 250px;
+      background-color: yellow;
+      text-align: center;
+  }
+
+  center .box {
+    width: 700px;
+    height: 300px;
+    z-index: -1000;
+    margin-top: 250px;
+      background-color: rgba(204, 255, 102, 0.8);
+    -webkit-transform:
+        translateY(150px)
+        translateX(100px);
+    border-radius: 30px;
+    text-align:center;
+  }
+
+
+
+
+
+  iframe{
+    -webkit-transform:
+        translateY(100px);
+  }
+
+  .line1 {
+      width: 720px;
+      height: 10px;
+      border-bottom: 10px solid yellow;
+      -webkit-transform:
+          translateY(95px)
+          translateX(400px)
+          rotate(27deg);
+      position: absolute;
+      /* top: -20px; */
+  }
+
+  .line2 {
+      width: 200px;
+      height: 47px;
+      border-bottom: 10px solid yellow;
+      -webkit-transform:
+          translateY(511px)
+          translateX(675px)
+          rotate(90deg);
+      position: absolute;
+      top: -33px;
+      left: -13px;
+  }
+
+  #header {
+      background: #006699;
+      height: inherit;
+      border-bottom: 4px solid white;
+      border-left: 4px solid white ;
+      border-right: 4px solid white ;
+  }
+
+
+  body{
+    background-color: #00ff66;
+    background-image: url("../pics/background.png");
+
+
+  }
+
+
+  @import url('https://fonts.googleapis.com/css?family=Passion+One');
+  #pic {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -100px;
+    margin-left: 32px;
+    float: left;
+    font-family: Passion One;
+  }
+  .pic {
+      height: 175px;
+      width: 175px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 50px;
+      -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+            transition: all .5s ease;
+      float: left;
+    }
+    span {
+      color: inherit;
+   opacity: 0;
+   -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+         transition: all .5s ease;
+  }
+  .pic:hover span {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+   -moz-transition: all .5s ease;
+       transition: all .5s ease;
+  }
+  .pic:hover {
+  opacity: 0.6;
+  -webkit-transition: all .5s ease;
+   -moz-transition: all .5s ease;
+       transition: all .5s ease;
+  }
+  hr {
+    height: 10px;
+    background-color: #ece816;
+    margin-top: 100px;
+  }
+  #Imani {
+    background: url("../pics/mani.JPG")no-repeat;
+    -webkit-transform: rotate(90deg);
+    background-position: center;
+    color: white;
+    text-shadow: 2px 0 black;
+  }
+  .mani {
+    -webkit-transform: rotate(-90deg);
+  }
+  #Emily {
+    background: url("../pics/emily.jpg")no-repeat;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 0 black;
+  }
+  #Mya{
+    background: url("../pics/mya.JPG")no-repeat;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 0 black;
+  }
+  #Kenadie {
+    background: url("../pics/ken.JPG")no-repeat;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 0 black;
+  }
+  #home {
+    background: url("../pics/homeKen.png")no-repeat center;
+    color: black;
+    text-shadow: none;
+  }
+  #forum {
+    background: url("../pics/forumKen.png")no-repeat;
+    background-position: center;
+    color: black;
+  }
+  #Gallery {
+    background: url("../pics/galleryKen.png")no-repeat;
+    background-position: center;
+    color: black;
+    text-shadow: none;
+  }
+
+
+  .responsive {
+       padding: 0 6px;
+
+       width: 24.99999%;
+    }
+    @media only screen and (max-width: 700px){
+       .responsive {
+           width: 49.99999%;
+           margin: 6px 0;
+
+       }
+    }
+    @media only screen and (max-width: 500px){
+       .responsive {
+           width: 100%;
+           border-style: dotted;
+           width: 1000px;
+           border-radius: 50px;
+           margin-left: 250px;
+       }
+    }
+    video {
+      -webkit-transform: rotate(-90deg);
+    }
+</style>
+</head>
+<body data-gr-c-s-loaded="true">
+  <center>
+  <div id="header">
+    <img src="../pics/logo.png" width="450" hight="320">
+  </div>
+</center>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <hr/>
+  <div id = "pic">
+  <a href = "Imani.html"><div class = "pic" id = "Imani">
+  <br/><div class = "mani">
+  <span>Imani</span></div>
+  </div></a></div><div id = "pic">
+  <a href = "http://localhost/GWCend/php/new_topic.php"><div class = "pic" id = "forum">
+  <br/>
+  <span>Forum</span>
+  </div></a></div><div id = "pic">
+  <a href = "Shamya.html"><div class = "pic" id = "Mya">
+  <br/>
+  <span>Mya</span>
+  </div></a></div><div id = "pic">
+  <a href = "home.html"><div class = "pic" id = "home">
+    <br/>
+    <span>Home</span>
+  </div></a></div><div id = "pic">
+  <a href = "Kenadie.html"><div class = "pic" id = "Kenadie">
+  <br/>
+  <span>Kenadie</span>
+  </div></a></div><div id = "pic">
+  <a href = "gallery.html"><div class = "pic" id = "Gallery">
+  <br/>
+  <span>Gallery</span>
+  </div></a></div><div id = "pic">
+  <a href = "Emily.html"><div class = "pic" id = "Emily">
+  <br/>
+  <span>Emily</span>
+  </div></a></div>
+
+<center>
+
+<div class="line2"></div>
+
+<div class="circle">
+  <br>
+  <br>
+   <img src="http://pm1.narvii.com/6132/12ebdda76bad4d298ad4a436a3eb0badb032518d_hq.jpg" style="border-radius:50%;" width="300" height="300">
+  <br>
+  Hello, and welcome to my page! <br>
+  My name is Kenadie Singleton, and I am 17 and a senior at
+   Grand Prairie Fine Arts Academy.
+   I enjoy sewing and art, and wish to pursue
+   a career in animation and cartoon production
+   and to hopefully create my<br>
+   own webseries. <br>
+  </div>
+
+<div class="line1" style="-webkit-transform:
+      translateY(130px)
+      translateX(700px)
+      rotate(55deg); width:400px;" ></div>
+<div class="box" style="float:left;">
+  <br><br><br><br><br><br>
+  <p>
+  Our first two weeks we were able to make games, two with a team and one on our own. <br>
+  For the first two we used the Scratch program
+  </p>
+</div>
+<div class="circle" style="margin-left:800px;"> <br><br><br>
+  <img src="https://uploads.scratch.mit.edu/users/avatars/1415/6156.png" style="margin-top:30; border-radius:50%;"width="400" height="400">
+  <br>
+  Scratch</div>
+<div class="line1" style="-webkit-transform:
+      translateY(100px)
+      translateX(390px)
+      rotate(-26deg);"> </div>
+
+<div class="box" style="float:right;-webkit-transform: translateY(150px) translateX(-100px);">
+  <p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    The first game we were tasked to make was a Pong like game using the Scratch program. <br>
+    We worked in a group of two to make this game, and were able to successfully <br>
+    able to get it to work with few bugs. For our  second game we made a platformer game with a <br>
+    group of 3 or 4. We had to design the game and make it in Scratch. <br>
+    We werent able to completely finish the game, but did figure out how to make it work.
+
+  </p>
+</div>
+<div class="circle" style="margin-right:800px;border-radius:30%"> <iframe allowtransparency="true" width="400" height="389"
+  src="https://scratch.mit.edu/projects/embed/165044327/?autostart=false" frameborder="0" allowfullscreen></iframe>
+  <br>
+  Pong </div>
+<div class="line1">  </div>
+<div class="box" style="float:left;">
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <p> The game we made individually were text adventure games. We learned<br>
+     how to utilize user input so that when a player responds to the <br>
+     prompt the game outputs a response depending on the input of the player.<br>
+     I think making this game was my favorite project we did as <br>
+     I love games that give you options to choose from.
+   </p>
+</div>
+<div class="circle" style="margin-left:800px;border-radius:20%;"> <img src="../pics/game.png" style="margin-top:150px;border-radius:5%;"width="500px" height="500px">
+  <br>
+  Text Adventure</div>
+<div class="line1" style="-webkit-transform:
+    translateY(100px)
+    translateX(390px)
+    rotate(-26deg);"></div>
+<div class="box" style="float:right;-webkit-transform: translateY(150px) translateX(-100px);">
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <p>
+    Throughout our time at the program we worked on our own personal portfolio websites <br>
+    after our Scratch lesson. We used it as a sort of digital resume. It was really cool to be <br>
+    able to make my own personal website and have it posted live for other people to look at. <br>
+    Initially it was really difficult to get my website to work on github, the hosting site we used<br>
+    to get it to get our websites online, as the layout was difficult for me to understand at first. <br>
+    I eventually got used to it and learned how to use the site properly
+  </p></div>
+<div class="circle" style="margin-right:800px;border-radius:20%;"><a href = "https://kenadiesingleton.github.io/portfolio/home.html" target = "_blank">
+  <img src="../pics/Portfolio PrtScr.png" style="-webkit-transform: translateY(130px) translateX(1px);" width="490" height="490">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>Portfolio Page:
+    <br>Click Me!</p>
+</div>
+</a>
+<div class="line1"> </div>
+
+<div class="box" style="float:left;">
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <p>
+  One of the most difficult to figure out projects we had was the Obamicon image project. We had to <br>
+  figure out how to make an Obamicon image using code only. This project frustrated everyone <br>
+  in my class as we just had the hardest time figuring it out, but once we did finally get the code <br>
+  right we turned every picture on our computers or pictures we copied off the internet into an Obamicon.
+</p></div>
+<div class="circle" style="margin-left:800px;" width="500px" height="500px"><img src="../pics/recolored.jpg" style="border-radius:50%;-webkit-transform: translateY(50px) translateX(1px);" width="400px">
+  <br>
+  <br>
+  <br>
+  <br>
+  Obamicon project</div>
+
+  <div class="line1" style="-webkit-transform:
+      translateY(100px)
+      translateX(390px)
+      rotate(-26deg);"></div>
+  <div class="box" style="float:right;-webkit-transform: translateY(150px) translateX(-100px);">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>
+      We got to program robots to move, sing and dance! We seperated into groups to make<br>
+      the robots dance, which was tons of fun as once we learned the code using arduino.<br>
+      We got to have a dance competition between other groups, which my group won <br>
+      might I add. Getting to make the robots sing was the most fun since we had all the <br>
+      robots sing "Twinkle Twinkle Little Star" in different keys.
+
+    </p></div>
+  <div class="circle" style="margin-right:800px;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <video width="300" height="400" controls>
+      <source src="../pics/Perry.mp4" type="video/mp4">
+    </video>
+<br>
+<br>
+<br>
+Robot project
+
+  </div>
+
+
+  <div class="line1"></div>
+
+  <div class="box" style="float:left;">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>
+      Around week two of the program we recieved mentors! They were there to help us throughout <br>
+      our time in the program. They helped us learn how to make portfolios, resumes, and college <br>
+      information. My mentor, Rebecca Kern, helped me learn more about my chosen career as a visual artist. <br>
+      She connected me with other artist and events going on in the area, and possible schools to attend.<br>
+      My mentor was super helpful to me and I am so glad I was able to work with her.
+  </p></div>
+  <div class="circle" style="margin-left:800px;" width="500px" height="500px"><img src="../pics/mentor.jpg" style="border-radius:20%;-webkit-transform: translateY(100px) translateX(1px);" width="400px">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Mentor Program</div>
+
+
+    <div class="line1" style="-webkit-transform:
+        translateY(100px)
+        translateX(390px)
+        rotate(-26deg);"></div>
+    <div class="box" style="float:right;-webkit-transform: translateY(150px) translateX(-100px);">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p>
+        We got to go on many fieldtrips during our time at Girls Who Code, my <br>
+        favorite being the trip to Tech Village and getting to go to Georgia Tech to see<br>
+        the robotics lab and interactic with their robots. All the fieldtrips had something unique<br>
+        to them that we learned that helped us better ourselves and our projects
+
+      </p></div>
+    <div class="circle" style="margin-right:800px;">
+      <br>
+      <br>
+      <br>
+      <img src="../pics/KIRI.jpg" width="250px" height="350px" style="border-radius:20%;">
+  <br>
+  <br>
+  Field Trips
+
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</center>
+</body>
+</html>

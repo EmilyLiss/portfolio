@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+body {
+  background: url('file://C:/Users/GWC-ATL-06/Desktop/Portfolio/assets/green.jpg') center center;
+}
+/* FOR GWC LOGO*/
+#logo {
+  height: 400px;
+  margin-top: 10px;
+}
+/* FOR ALL BOXES ON PAGE*/
+#box div{
+  width:650px;
+  height:500px;
+  border: 6px solid white;
+  border-radius: 30px;
+}
+
+#box img  {
+  border-radius: 30px;
+  width:650px;
+  height:500px;
+  border: 6px solid white;
+}
+
+/* FOR CIRCLES (HEADER ABOVE PAGE)*/
+#pic {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -100px;
+  margin-left: 80px;
+  float: left;
+ font-family: Passion One;
+}
+
+.pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+    -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+          transition: all .5s ease;
+    float: left;
+  }
+
+  span {
+    color: inherit;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+          transition: all .5s ease;
+  }
+
+.pic:hover span {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+        transition: all .5s ease;
+}
+
+.pic:hover {
+  opacity: 0.6;
+  -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+        transition: all .5s ease;
+}
+
+hr {
+  height: 10px;
+  background-color: #ece816;
+  margin-top: 100px;
+}
+#Imani {
+  background: url("https://mail.google.com/mail/u/0/?ui=2&ik=faf50c6814&view=fimg&th=15d3811796eff124&attid=0.1&disp=inline&safe=1&attbid=ANGjdJ_dpdNE1WpTEIXNfJpIQT4lH52_rdeo3siuJ9wiiUUopgfKYjLOgbwzERcF2z2q4D2m84VdhYiECZAet2PONy1qi8X-5rP19TBXHTl6CQY1PJ6LjRuyxBHvWyg&ats=1499884257014&rm=15d3811796eff124&zw&sz=w1920-h948")no-repeat;
+  background-position: center;
+}
+#Emily {
+  background: url("https://mail.google.com/mail/u/0/?ui=2&ik=faf50c6814&view=fimg&th=15d37d016d531df9&attid=0.1&disp=inline&safe=1&attbid=ANGjdJ-ehJCONZJ-YcwHQZePLYoz4EMU822ES07kUKGQM1ax4UWaYY9hDThr4qyH6POIUcLthMqD52vt0IQi6w4ELXs64KEUWwYOX6YNVoF3meIo-unWKyjdYb6wxRo&ats=1499879972528&rm=15d37d016d531df9&zw&sz=w1920-h948")no-repeat;
+  background-position: center;
+}
+#Mya{
+  background: url("https://mail.google.com/mail/u/0/?ui=2&ik=faf50c6814&view=fimg&th=15d37f963a78c5c0&attid=0.3&disp=inline&safe=1&attbid=ANGjdJ_b82av5wPh0SZiHpKpuzF6RkcgHreqB_nWxEr-NPT-iLupngO79P-lq19r7WrwCeHXT5_hj30-9W9WDVDD0zUcTopZsMC3HA5Jt_GmWdv9oOGcZHA0LmaCKTw&ats=1499882729097&rm=15d37f963a78c5c0&zw&sz=w1920-h948")no-repeat;
+  background-position: center;
+}
+#Kenadie {
+  background: url("https://mail.google.com/mail/u/0/?ui=2&ik=faf50c6814&view=fimg&th=15d37dd015f790da&attid=0.1&disp=inline&safe=1&attbid=ANGjdJ96yX-sbfWF1Shr5Fa37otMA_1vwWd_P8EXiIsjQDsCsQHP-FehFWEyCzYcXzb3fjim9o8vr-aTbPJQHiXTHXX8OueQr8lOcbTyxNyjQRGHjDEWh0KYS1iIUyU&ats=1499880827914&rm=15d37dd015f790da&zw&sz=w1920-h948")no-repeat;
+  background-position: center;
+}
+#home {
+  background: url("https://emojipedia-us.s3.amazonaws.com/thumbs/160/lg/35/house-building_1f3e0.png")no-repeat center;
+  color: black;
+}
+#forum {
+  background: url("https://developer.apple.com/assets/elements/icons/128x128/forum.png")no-repeat;
+  background-position: center;
+  color: black;
+}
+#Gallery {
+  background: url("http://icons.iconarchive.com/icons/thiago-silva/palm/128/Photos-icon.png")no-repeat;
+  background-position: center;
+  color: black;
+  text-shadow: none;
+}
+/* END OF HEADER */
+
+ /* FOR THE HOVER EFFECT*/
+.words{
+  visibility: visible;
+  position:absolute;
+  width: 600px;
+}
+
+.popup{
+  visibility: hidden;
+  position:absolute;
+  width: 600px;
+  font-size: 25px;
+  line-height:15px;
+}
+
+.salmon:hover .words{
+  visibility: hidden;
+}
+
+.salmon:hover .popup{
+  visibility:visible;
+}
+
+.blue:hover .words{
+  visibility: hidden;
+  overflow: scroll;
+}
+
+.blue:hover .popup{
+  visibility:visible;
+}
+
+.orange:hover .words{
+  visibility: hidden;
+}
+
+.orange:hover  .popup{
+  visibility:visible;
+  overflow: scroll;
+}
+/* END OF CODE FOR HOVER*/
