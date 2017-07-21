@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Imani</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+body {
+  background: url('../pics/FinalProject/green.jpg') center center;
+}
+#logo {
+  height: 400px;
+  margin-top: 10px;
+}
+
+#box div{
+  width:650px;
+  height:500px;
+  border: 7px solid white;
+  border-radius: 30px;
+}
+
+#pic {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -100px;
+  margin-left: 30px;
+  float: left;
+  color: white;
+  font-family: Passion One;
+  text-shadow: 3px 0 black;
+
+}
+.pic {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 63px;
+    -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+          transition: all .5s ease;
+    float: left;
+  }
+  span {
+    color: inherit;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+          transition: all .5s ease;
+  }
+.pic:hover span {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+        transition: all .5s ease;
+}
+.pic:hover {
+  opacity: 0.6;
+  -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+        transition: all .5s ease;
+}
+
+.words{
+  visibility: visible;
+  position:absolute;
+  width: 600px;
+}
+
+.popup{
+  visibility: hidden;
+  position:absolute;
+  width: 640px;
+  font-size: 25px;
+  line-height:15px;
+  height: 480px;
+
+}
+
+.salmon:hover .words{
+  visibility: hidden;
+}
+
+.salmon:hover .popup{
+  visibility:visible;
+}
+
+.blue:hover .words{
+  visibility: hidden;
+  overflow: scroll;
+}
+
+.blue:hover .popup{
+  visibility:visible;
+  overflow: scroll;
+}
+
+.orange:hover .words{
+  visibility: hidden;
+}
+
+.orange:hover  .popup{
+  visibility:visible;
+  overflow: scroll;
+}
+
+hr {
+  height: 10px;
+  background-color: #ece816;
+  margin-top: 100px;
+}
+
+#box img  {
+  border-radius: 30px;
+  width:650px;
+  height:500px;
+  border: 6px solid white;
+
+}
+#Imani {
+  background: url("../pics/mani.JPG")no-repeat;
+  -webkit-transform: rotate(90deg);
+  background-position: center;
+  color: white;
+  text-shadow: 2px 0 black;
+}
+.mani {
+  -webkit-transform: rotate(-90deg);
+}
+#Emily {
+  background: url("../pics/emily.jpg")no-repeat;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 0 black;
+}
+#Mya{
+  background: url("../pics/mya.JPG")no-repeat;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 0 black;
+}
+#Kenadie {
+  background: url("../pics/ken.JPG")no-repeat;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 0 black;
+}
+#home {
+  background: url("../pics/FinalProject/homeMani.png")no-repeat center;
+  color: black;
+  text-shadow: none;
+}
+#forum {
+  background: url("../pics/FinalProject/forumMani.png")no-repeat;
+  background-position: center;
+  color: black;
+}
+#Gallery {
+  background: url("../pics/FinalProject/galleryMani.png")no-repeat;
+  background-position: center;
+  color: black;
+  text-shadow: none;
+}
+
+#weekend {
+  margin-top: -510px;
+  float: right;
+  margin-right: 50px;
+}
+#iframe {
+  margin-top: -510px;
+  margin-right: 50px;
+  border: 5px solid white;
+  border-radius: 20px;
+  float: right;
+}
+.yellow {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+#iframe1 {
+  margin-left: 50px;
+  margin-top: 100px;
+  border: 5px solid white;
+  border-radius: 20px;
+  float: left;
+}
+#pink {
+  float: right;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+#iframe2 {
+  margin-left: 50px;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+#iframe3{
+  float: left;
+ margin-top: 80px;
+ margin-left: 50px;
+ border-radius: 20px;
+}
+.salmon {
+  margin-left: 50px;
+}
+.purple {
+  float: right;
+  margin-right: 50px;
+}
+.blue {
+  margin-left: 50px;
+}
+.orange{
+  float: right;
+  margin-right: 50px;;
+}
+
+.portfolio{
+  float:right;
+  margin-right:50px;
+}
+ .red{
+   float: right;
+   margin-top: 100px;
+   margin-right: 50px;
+ }
+
+#web {
+  float: right;
+  margin-right: 50px;
+
+}
+.Imani{
+  width: 500px;
+height: 500px;
+margin-top: -70px;
+border: 4px solid white;
+border-radius: 20px;
+
+}
+
+p{
+  font-family: Passion One;
+  font-size: 33px;
+  margin-left: 10px;
+  color: white;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-shadow: 1px 0 black;
+}
+
+h1{
+  font-family: Passion one;
+  font-size: 150px;
+  color: #ff7498;
+  text-shadow: 4px 0 black;
+  margin-top:-20px;
+}
+#robot{
+  margin-top: 20px;
+  float: left;
+  margin-left: 50px;
+}
+</style>
+</head>
+<body>
+<center><img id = "logo" src = "../pics/FinalProject/gwcl2.png"/></center>
+<hr/>
+<div id = "pic">
+<a href = "Imani.html"><div class = "pic" id = "Imani">
+<br/><div class = "mani">
+<span>Imani</span></div>
+</div></a></div><div id = "pic">
+<a href = "http://localhost/GWCend/php/new_topic.php"><div class = "pic" id = "forum">
+<br/>
+<span>Forum</span>
+</div></a></div><div id = "pic">
+<a href = "Shamya.html"><div class = "pic" id = "Mya">
+<br/>
+<span>Mya</span>
+</div></a></div><div id = "pic">
+<a href = "home.html"><div class = "pic" id = "home">
+  <br/>
+  <span>Home</span>
+</div></a></div><div id = "pic">
+<a href = "Kenadie.html"><div class = "pic" id = "Kenadie">
+<br/>
+<span>Kenadie</span>
+</div></a></div><div id = "pic">
+<a href = "gallery.html"><div class = "pic" id = "Gallery">
+<br/>
+<span>Gallery</span>
+</div></a></div><div id = "pic">
+<a href = "Emily.html"><div class = "pic" id = "Emily">
+<br/>
+<span>Emily</span>
+</div></a></div>
+<br></br><br></br><br></br>
+<center><h1> Imani Hernandez </h1></center>
+<center><img class = "Imani" src = "../pics/FinalProject/imani.jpg"></center>
+
+
+<div id = "box">
+
+<div class = "yellow" style = "background-color:#ffff4d;">
+<p> The first week we spent time getting to know each other and introducing ourselves. This project was the first of many that we did on scratch, a website that you can program your own interactive stories, games, and animations.
+  I enjoyed this because as you can see we were
+  able to be creative with whatever we created and scratch was pretty easy to understand once it was explained to us, we learned about loops, variables and conditionals. (Can look inside for code) </p>
+</div>
+
+<iframe id = "iframe" allowtransparency="true" width="630px" height="500px" src="https://scratch.mit.edu/projects/embed/90595785/?autostart=false" frameborder="0" allowfullscreen> </iframe>
+
+<div id = "pink" style = "background-color:#ff6699;">
+<p> This project was also produced on scratch but it was a partner project. We did many group and partner projects and this was one of the many. At first I wasn't too fond of it but it turns out
+we helped eachother better understand and it helped me learn how to work better in group assignments. This is our (Sanai Kaufman) Paddle ball game that we worked on together and is fully functionally maybe a little glitchy but it was tons of fun to make. (Can look inside for code)</P>
+ </div>
+
+<iframe id = "iframe1" allowtransparency="true" width="630px" height="500px"  src="https://scratch.mit.edu/projects/embed/168788520/?autostart=false" frameborder="0" allowfullscreen></iframe>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+<div class = "salmon" style = "background-color: #ff7d66;">
+<p class= "words"> As the weeks progressed we started to take on a little harder projects for example the obamicon project which we had to learn a lot of python to get it to work. We chose a picture of our liking and made a filter for it, kind of like the snapchat filters.
+  It was very frustrating trying to understand the RGB color values and exactly how to get the colors to change. Many of us were frustrated with this project particularly but the teachers helped us
+  understand it better. We learned about lists, tuples and parameters. </p>
+  <p class="popup">CODE: <br></br>
+    from PIL import Image <br></br>
+  my_image = Image.open("THEWEEKND.jpg")<br></br>
+  image_list = my_image.getdata()<br></br>
+  image_list = list(image_list)<br></br>
+  recolored = []<br></br>
+
+  for pixel in image_list:<br></br>
+      intensity = pixel [0] +  pixel [1] + pixel [2]<br></br>
+      if(intensity < 182) :
+          recolored.append(darkBlue)<br></br>
+      elif(intensity < 364) :
+          recolored.append(red)<br></br>
+      elif(intensity < 546):
+          recolored.append(lightBlue)<br></br>
+      else: recolored.append(yellow)<br></br>
+
+  new_image = Image.new("RGB", my_image.size)<br></br>
+  new_image.putdata(recolored)<br></br>
+  new_image.show()<br></br>
+  new_image.save("recolored.jpg", "jpeg")</p>
+  </div>
+
+  <img id = "weekend" src = "../pics/FinalProject/recolored.jpg"/>
+  <br/><br/><br/><br/><br/><br/>
+<div class = "purple" style = "background-color:#9c4be7;">
+<p> A sratch game that me and Priyanka created using scartch. It was merely for the fun of it and we had a lot of fun coding it. It is fully functional. We used a lot of loops and conditionals to create this. We were really happy when we finished it because it took a lot of trial and error which is something I had to get used to. (Can look inside for code) </p>
+</div>
+<iframe id = "iframe2" allowtransparency="true" width="630px" height="500px" src="https://scratch.mit.edu/projects/embed/168863275/?autostart=false" frameborder="0" allowfullscreen></iframe>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div class="portfolio">
+<a href= "index.html">
+<img src = "../pics/FinalProject/web.png"/>
+</a>
+</div>
+
+<div class = "blue" style= "background-color:#00CED1;">
+<p class = "words"> We each had to create a portfolio page about ourselves. This project consisted of learning HTML, javascript, and CSS. This was probably one of my favorite projects
+because I was able to create something from scratch and see it get better and better after each code I typed. Its customized to my liking by me and I learned so much by being able to hands on independently work yet still able to ask my peers questions.
+We all sort of improved each others ideas and encouraged each other. The page is still under construction but so far I love it.</p>
+<p class = "popup"> CSS CODE:<br></br>
+  @import url('https://fonts.googleapis.com/css?family=Cookie'); <br></br>
+.wrapper {<br></br>
+  text-align: center;<br></br>
+  margin-left: 350px;<br></br>
+  margin-top: -150px;}<br></br>
+
+.index-divs {<br></br>
+  width: 800px;<br></br>
+  height: 300px;<br></br>
+  font-family: "Cookie";<br></br>
+  font-size: 75px;<br></br>
+  color: white;<br></br>
+  border: 4px solid white;}<br></br>
+
+#div-about {<br></br>
+  background: url('../assets/miami.jpg')no-repeat center center;<br></br>
+  color: #ffff80;<br></br>
+  background-position: center;<br></br>
+
+  #div-projects {<br></br>
+    background: url('../assets/flower.jpg')no-repeat center center;<br></br>
+    color: #ff80aa;<br></br>
+    background-position: bottom;<br></br>
+  }<br></br>
+
+  #div-photos {<br></br>
+    background: url('../assets/photo.jpg')no-repeat center center;<br></br>
+    background-size: cover;<br></br>
+    color:#bf80ff;<br></br>
+    border-bottom-left-radius: 15px;<br></br>
+    border-bottom-right-radius: 15px;<br></br>
+  }<br></br>
+
+
+  h1{<br></br>
+    font-family:"Cookie";<br></br>
+    font-size: 200px;<br></br>
+    color: white;<br></br>
+    text-shadow: 3px 0 black;<br></br>
+  }<br></br>
+  a {<br></br>
+    text-decoration: none;<br></br>
+    color: white;<br></br>
+    font-size: 100px;<br></br>
+    -webkit-transition: all 1s ease;<br></br>
+    -moz-transition: all 1s ease;<br></br>
+        transition: all 1s ease;<br></br>
+     text-shadow: 3px 0 black;<br></br>
+  }<br></br>
+  a:hover {<br></br>
+    color: inherit;<br></br>
+    -webkit-transition: all 1s ease;<br></br>
+    -moz-transition: all 1s ease;<br></br>
+        transition: all 1s ease;<br></br>
+  }<br></br>
+  #div-photos a {<br></br>
+    color: black;<br></br>
+    -webkit-transition: all 1s ease;<br></br>
+    -moz-transition: all 1s ease;<br></br>
+        transition: all 1s ease;<br></br>
+  }<br></br>
+  #div-photos a:hover {<br></br>
+    color: inherit;<br></br>
+    -webkit-transition: all 1s ease;<br></br>
+    -moz-transition: all 1s ease;<br></br>
+        transition: all 1s ease;<br></br>
+  }<br></br>
+  .name {<br></br>
+    margin-top: -150px;<br></br>
+  }<br></br>
+  #about {<br></br>
+    border: 5px solid white;<br></br>
+    border-top-left-radius: 15px;<br></br>
+    border-top-right-radius: 15px;<br></br>
+    border-bottom-left-radius: 15px;<br></br>
+    border-bottom-right-radius: 15px;<br></br>
+    width: 1000px;<br></br>
+    margin-left: 250px;<br></br>
+    margin-top: -20px;<br></br>
+    background-color: 	#d65c85;<br></br>
+    text-shadow: 1px 0 black;<br></br>
+  }<br></br>
+  p {<br></br>
+    margin-left: 10px;<br></br>
+    color: white;<br></br>
+    font-size: 35px;<br></br>
+    font-family: "Cookie";<br></br>
+  }<br></br>
+  h2 {<br></br>
+    margin-left: 250px;<br></br>
+    color: white;<br></br>
+    font-family:"Cookie";<br></br>
+    font-size: 50px;<br></br>
+    text-shadow: 2px 0 black;<br></br>
+    margin-top: -150px;<br></br>
+  }<br></br>
+  h3 {<br></br>
+    margin-top: -200px;<br></br>
+    color: white;<br></br>
+    font-family: "Cookie";<br></br>
+    font-size: 50px;<br></br>
+    text-shadow: 2px 0 black;<br></br>
+    margin-left: 250px;<br></br>
+  }<br></br>
+
+
+</div>
+<br/><br/><br/><br/><br/><br/>
+
+<img id= "robot" src = "../pics/FinalProject/robot.jpg"/>
+
+<div class = "orange" style = "background-color:#66ff8c;">
+<p class ="words"> This project wasn't only coding, we learned all of the parts of the robot, how to build various circuits. The whole week was dedicated to robotics; we did robot dance party competitions, programmed the robots to allow the LED's to blink and programmed various EscapeBots that had sensors. We used the Arduino software to do so. A lot of people felt differently about these projects but I personally enjoyed it because it was very hands-on.</p>
+<p class = "popup"> CODE: <br><br/>
+  #include <Servo.h> <br><br/>
+
+  Servo servoLeft;  <br><br/>
+  Servo servoRight;<br><br/>
+
+  void setup() <br><br/>
+  {<br><br/>
+    pinMode(10, INPUT);  pinMode(9, OUTPUT);<br><br/>
+    pinMode(3, INPUT);  pinMode(2, OUTPUT);    <br><br/>
+
+    tone(4, 3000, 1000); <br><br/>
+    delay(1000); <br><br/>
+
+    servoLeft.attach(13); <br><br/>
+    servoRight.attach(12); <br><br/>
+  }  <br><br/>
+
+  void loop() <br><br/>
+  {<br><br/>
+
+    int irLeft = irDetect(9, 10, 38000); <br><br/>
+    int irRight = irDetect(2, 3, 38000); <br><br/>
+
+    if((irLeft == 0) && (irRight == 0)) <br><br/>
+    {<br><br/>
+      maneuver(-200, -200, 20); <br><br/>
+    }<br><br/>
+    else if(irLeft == 0)<br><br/>
+    {<br><br/>
+      maneuver(200, -200, 20); <br><br/>
+    }<br><br/>
+    else if(irRight == 0)<br><br/>
+    {<br><br/>
+      maneuver(-200, 200, 20);<br><br/>
+    }<br><br/>
+    else      <br><br/>
+    {<br><br/>
+      maneuver(200, 200, 20);<br><br/>
+    }<br><br/>
+  }<br><br/>
+
+  int irDetect(int irLedPin, int irReceiverPin, long frequency)<br><br/>
+  {<br><br/>
+    tone(irLedPin, frequency, 8);  <br><br/>
+    delay(1); <br><br/>
+    int ir = digitalRead(irReceiverPin);<br><br/>
+    delay(1); <br><br/>
+    return ir; <br><br/>
+  }  <br><br/>
+
+  void maneuver(int speedLeft, int speedRight, int msTime)<br><br/>
+  {<br><br/>
+
+    servoLeft.writeMicroseconds(1500 + speedLeft); <br><br/>
+    servoRight.writeMicroseconds(1500 - speedRight); <br><br/>
+    if(msTime==-1) <br><br/>
+    { <br><br/>
+      servoLeft.detach();<br><br/>
+      servoRight.detach(); <br><br/>
+    }<br><br/>
+    delay(msTime);<br><br/>
+  }<br><br/>
+</div>
+
+
+<div class = "red" style = "background-color: #ff80ff">
+  <p> This was a group sidescroller scratch game we had to create. There were four people in a group and it was pretty time consuming, so much we actually didn't get to finish before we progressed to the next project. We created our own charaters and theme and it was very collaborative. We had only a few days to create what seems so simple yet it was quite difficult. My main partner was Nicole Diaz whom we designed and created the game together. The objective was that in the project, you and your partner had to go through the design process of creating your own Side Scrolling game in Scratch that tells a story. We naed our game Spring. </p> </div>
+<iframe id ="iframe3" allowtransparency="true" width="650" height="500" src="https://scratch.mit.edu/projects/embed/169254313/?autostart=false" frameborder="0" allowfullscreen>
+
+</div>
+
+</body>
+</html>
